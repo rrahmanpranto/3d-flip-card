@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/07 low.jpg" type="image/x-icon">
+    <title>3d Flip Card</title>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+
+            <img src="img/shoes.png" id="frontImg">
+            <img src="img/shoes2.png" id="backImg">
+
+
+            <div class="product_inner" id="productBox">
+                <div class="product_front">
+                    <div class="product_top">
+                        <h1>Nike</h1>
+                    </div>
+                    <div class="product_bottom">
+                        <p>Nike running shoes</p>
+                        <h2>Air Zoom Winflo 6</h2>
+                        <h1>125 <span>$</span></h1>
+                        <button type="button">Add To Bag</button>
+                        <div class="color_select">
+                            <div class="select_item">
+                                <img src="img/shoes-icon.png" alt="">
+                            </div>
+                            <div class="select_item">
+                                <img src="img/shoes-icon2.png" onclick="flipRight()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_back">
+                    <div class="product_top product_top2">
+                        <h1>Nike</h1>
+                    </div>
+                    <div class="product_bottom">
+                        <p>Nike running shoes</p>
+                        <h2>Air Zoom Winflo 6</h2>
+                        <h1>125 <span>$</span></h1>
+                        <button type="button">Add To Bag</button>
+                        <div class="color_select">
+                            <div class="select_item">
+                                <img src="img/shoes-icon.png" onclick="flipLeft()">
+                            </div>
+                            <div class="select_item">
+                                <img src="img/shoes-icon2.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_side"></div>
+                <div class="right_side"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
